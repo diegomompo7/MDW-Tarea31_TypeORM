@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "d814863b-bdd9-4acb-84f6-23e7f40a506c",
+		"name": "Tarea 31 TypeORM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14760802"
+	},
+	"item": [
+		{
+			"name": "TypeORM",
+			"item": [
+				{
+					"name": "Students",
+					"item": [
+						{
+							"name": "GET TABLE STUDENTS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ID  TABLE STUDENTS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "INSERT INTO TABLE STUDENTS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"name\": \"Google\",\r\n    \"foundedYear\": 1998,\r\n    \"employeesNumber\": 100000,\r\n    \"headquarters\": \"Mountain View, California, United States\",\r\n    \"ceo\": \"Sundar Pichai\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/languages",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"languages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE ID  TABLE STUDENTS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE ID  TABLE STUDENTS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Courses",
+					"item": [
+						{
+							"name": "GET TABLE COURSES",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET ID  TABLE COURSES",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/courses/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"courses",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "INSERT INTO TABLE COURSES",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"name\": \"Filosfía\",\r\n    \"department\":  \"Ciencias\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/courses",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"courses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE ID  TABLE COURSES",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/students/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"students",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE ID  TABLE COURSES",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Física\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/courses/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"courses",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
